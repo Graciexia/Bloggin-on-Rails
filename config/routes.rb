@@ -1,4 +1,34 @@
 Rails.application.routes.draw do
+   # get('/todos/new', {to: 'todos#new'})
+  # get('/todos/completed', {to: 'todos#get_completed'})
+  # get('/todos/uncompleted', {to: 'todos#get_uncompleted'})
+
+  resources :posts
+        # get '/posts/new', to: 'posts#new'
+
+        # get '/posts/index', to: 'posts#index'
+
+        # get '/posts/:id', to: 'posts#show'
+        # # put '/todos/:id', to: 'todos#update'
+        # # delete 'todos/:id', to: 'todos#destroy'
+        # get'/posts/new', to: 'posts#new'
+
+        # get'/posts/:id/edit', to: 'posts#edit'
+
+        # get '/posts', to: 'posts#get_all_posts'
+
+        # post'/posts', to: 'posts#create'
+
+        # delete 'posts/:id', to: 'posts#destroy'
+
+        # put 'posts/:id', to: 'posts#update'
+
+  get '/welcome/about', to: 'welcome#about'
+
+  get '/welcome', to: 'welcome#index'
+
+  root 'welcome#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

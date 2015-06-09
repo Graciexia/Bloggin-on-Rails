@@ -1,0 +1,23 @@
+<span class = "show_post"><h2> The Post you are looking for</h2></span>
+<ul>
+
+  <p>******************************************</p>
+  <div class = "postinfo">
+
+  <p> <strong>Title:</strong> <%= post.title %></p>
+
+  <p> <strong>Body:</strong> <%= post.body %></p>
+
+  <p> <strong>Created Time:</strong> <%= post.created_at %></p>
+
+  <p> <strong>Updated Time:</strong> <%= post.updated_at %></p>
+  </div>
+  <div class='edit'>
+    <%= link_to "Edit Post", { action: 'edit', id: post.id, controller: 'posts' } %>
+   </div>
+
+  <div class = "delete">
+    <%= button_to "Delete #{post.id}", { action: "destroy", id: post.id }, method: "delete", data: {confirm: "Are you sure?"} %>
+  </div>
+
+</ul>

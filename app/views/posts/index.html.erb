@@ -1,0 +1,42 @@
+<span class = "all the posts"><h2>All the Posts(<%= posts.count %>)</h2></span>
+<ul>
+
+    <% posts.each do |post| %>
+      <li>
+        <p>******************************************</p>
+
+        <div class="view">
+          <%= button_to "Title #{post.title}", {action: "show", id: post.id}, method: :get %>
+        </div>
+
+        <div class="post">
+        <p> <strong>Created Time:</strong> <%= post.created_at %></p>
+
+        <p> <strong>Updated Time:</strong> <%= post.updated_at %></p>
+        </div>
+
+        <div class='edit'>
+          <%= link_to "Edit Post", { action: 'edit', id: post.id, controller: 'posts' } %>
+        </div>
+        <div class="delete">
+          <%= button_to "Delete #{post.id}", { action: "destroy", id: post.id }, method: "delete", data: {confirm: "Are you sure?"} %>
+        </div>
+      </li>
+    <%end%>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
