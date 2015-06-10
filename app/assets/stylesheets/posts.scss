@@ -1,3 +1,36 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.alltheposts {
+  color: blue;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 30px;
+}
+
+.post {
+  color: grey;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 15px;
+}
+
+.view {
+  color: grey;
+  font-size: 15px;
+}
+
+.edit {
+  color: grey;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 15px;
+}
+
+.delete {
+  color: grey;
+  font-size: 15px;
+}
+
+.show_post {
+  color: blue;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 25px;
+}

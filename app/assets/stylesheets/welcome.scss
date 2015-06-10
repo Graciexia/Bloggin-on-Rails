@@ -1,3 +1,68 @@
+
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome{
+  background-color: rgb(0, 153, 51);
+  padding-left: 200px;
+  padding-right:200px;
+  padding-top:100px;
+  padding-bottom:350px;
+  height: 450px
+}
+.index {
+  color: rgb(255,0,255);
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 50px
+}
+.about {
+  color: rgb(255, 80, 80);
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  padding-top:50px;
+  padding-bottom:50px
+
+
+}
+
+.all_my_post {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  padding-top:50px;
+  padding-bottom:50px
+
+}
+
+.post_search {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  padding-top:50px;
+  padding-bottom:50px
+}
+
+footer {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+  padding-top:100px;
+  color: yellow
+}
+
+.profile{
+  height: 800px;
+  width: 1000px;
+  padding-left: 50px;
+  background-color: grey
+}
+.pic{
+  background: url(profile.jpg);
+  height: 640px;
+  width:480px;
+  float: right
+}
+.info {
+  color: rgb(255, 153, 0);
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 25px;
+  padding-top:150px;
+  padding-bottom:150px
+}
